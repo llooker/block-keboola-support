@@ -4,7 +4,7 @@
   elements:
   - title: Ticket Creation and Feedback
     name: Ticket Creation and Feedback
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_column
     fields: [ticket.score, ticket.created_month, ticket.tickets_total]
@@ -62,7 +62,7 @@
     height: 6
   - title: Open Tickets
     name: Open Tickets
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_open]
@@ -107,7 +107,7 @@
     height: 3
   - title: Most recent 20 tickets
     name: Most recent 20 tickets
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: table
     fields: [ticket.ticket_id, ticket.created_date, ticket.first_reply_time_average,
@@ -171,7 +171,7 @@
     height: 10
   - title: Total Raised Tickets
     name: Total Raised Tickets
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_total]
@@ -236,7 +236,7 @@
     height: 2
   - title: NPS Score
     name: NPS Score
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.good_evaluations_ratio]
@@ -281,7 +281,7 @@
     height: 3
   - title: SLA Compliance
     name: SLA Compliance
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_sla_violations, ticket.tickets_total]
@@ -351,7 +351,7 @@
     height: 2
   - title: 'Top Users by # of Tickets'
     name: 'Top Users by # of Tickets'
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_bar
     fields: [customer.customer, ticket.tickets_total]
@@ -426,7 +426,7 @@
     default_value: ''
     allow_multiple_values: true
     required: true
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: company
     listens_to_filters: []
     field: company.company

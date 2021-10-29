@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/ticket_event.view"
-
 view: ticket_event {
-  extends: [ticket_event_config]
-}
-
-view: ticket_event_core {
   sql_table_name: @{SCHEMA_NAME}."TICKET_EVENT" ;;
 
   dimension: event {

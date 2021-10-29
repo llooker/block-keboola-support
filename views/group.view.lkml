@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/group.view"
-
 view: group {
-  extends: [group_config]
-}
-
-view: group_core {
   sql_table_name: @{SCHEMA_NAME}."GROUP" ;;
   drill_fields: [group_id]
 
