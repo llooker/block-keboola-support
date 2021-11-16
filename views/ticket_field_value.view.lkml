@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/ticket_field_value.view"
-
 view: ticket_field_value {
-  extends: [ticket_field_value_config]
-}
-
-view: ticket_field_value_core {
   sql_table_name: @{SCHEMA_NAME}."TICKET_FIELD_VALUE" ;;
 
   dimension: pk {

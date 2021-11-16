@@ -4,7 +4,7 @@
   elements:
   - title: Tickets Created and Current Status
     name: Tickets Created and Current Status
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_area
     fields: [ticket.tickets_open, ticket.tickets_total, ticket.created_date]
@@ -52,7 +52,7 @@
     height: 6
   - title: Open Tickets
     name: Open Tickets
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_open]
@@ -96,7 +96,7 @@
     height: 3
   - title: Open Tickets by Age (days)
     name: Open Tickets by Age (days)
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_bar
     fields: [ticket.tickets_open, ticket.tickets_aging, ticket.priority]
@@ -150,7 +150,7 @@
     height: 6
   - title: Tickets Created by Channel
     name: Tickets Created by Channel
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_area
     fields: [ticket.tickets_total, ticket.created_date, ticket.channel]
@@ -202,7 +202,7 @@
     height: 6
   - title: Tickets and first response times
     name: Tickets and first response times
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_area
     fields: [ticket.tickets_total, ticket.created_date, ticket.first_reply_time_average]
@@ -282,7 +282,7 @@
     height: 2
   - title: New Tickets
     name: New Tickets
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_new]
@@ -326,7 +326,7 @@
     height: 3
   - title: SLA Violations
     name: SLA Violations
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_sla_violations]
@@ -384,7 +384,7 @@
     height: 3
   - title: Stale Tickets
     name: Stale Tickets
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: single_value
     fields: [ticket.tickets_open]
@@ -441,7 +441,7 @@
     height: 3
   - title: Resolution Time Trend
     name: Resolution Time Trend
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_line
     fields: [ticket.resolution_time_avg_h, employee.employee, ticket.created_month]
@@ -500,7 +500,7 @@
     height: 6
   - title: First Reply Time Trend
     name: First Reply Time Trend
-    model: block_keboola_support
+    model: block_keboola_support_v2
     explore: ticket
     type: looker_line
     fields: [employee.employee, ticket.created_month, ticket.first_reply_time_average]

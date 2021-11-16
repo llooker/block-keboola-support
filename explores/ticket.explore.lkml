@@ -1,6 +1,13 @@
-explore: ticket_core {
-  hidden: yes
-  extension: required
+include: "/views/ticket.view"
+include: "/views/employee.view"
+include: "/views/employee_group.view"
+include: "/views/group.view"
+include: "/views/ticket_field_value.view"
+include: "/views/ticket_event.view"
+include: "/views/customer.view"
+include: "/views/company.view"
+
+explore: ticket {
 
   join: employee {
     type: left_outer

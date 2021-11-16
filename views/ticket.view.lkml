@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/ticket.view"
-
 view: ticket {
-  extends: [ticket_config]
-}
-
-view: ticket_core {
   sql_table_name: @{SCHEMA_NAME}."TICKET" ;;
   drill_fields: [ticket_list*]
 

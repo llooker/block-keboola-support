@@ -43,21 +43,11 @@ connection: "@{CONNECTION}"
 
 label: "Block Keboola Support"
 
-include: "*.view"
-include: "*.explore.lkml"
-include: "*.dashboard.lookml"
-include: "//@{CONFIG_PROJECT_NAME}/*.view.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/*.model.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/*.dashboard"
+## Include Explores
+include: "/explores/company.explore.lkml"
+include: "/explores/employee.explore.lkml"
+include: "/explores/ticket.explore.lkml"
 
-explore: company {
-  extends: [company_config]
-}
-
-explore: employee {
-  extends: [employee_config]
-}
-
-explore: ticket {
-  extends: [ticket_config]
-}
+## Include Dashboards
+include: "/dashboards/company_status.dashboard.lookml"
+include: "/dashboards/overview.dashboard.lookml"
